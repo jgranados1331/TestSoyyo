@@ -1,4 +1,4 @@
-{
+var validate = {
     "type": "object",
     "properties": {
         "startId":{

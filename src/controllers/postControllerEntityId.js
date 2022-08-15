@@ -1,4 +1,3 @@
-import getEntityId from "../schema/getEntityId.json"
 const Ajv = require("ajv")
 const ajv = new Ajv()
 var postEntityId = require("axios");

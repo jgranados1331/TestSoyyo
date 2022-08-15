@@ -1,4 +1,4 @@
-{
+var entityval={
     "type": "object",
     "properties": {
         "entityId":{
