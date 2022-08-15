@@ -3,8 +3,6 @@ import express from "express";
 import morgan from "morgan";
 //routes
 import routesapi from "./routes/routes";
-import request from "request";
-
 
 const app=express();
 
@@ -17,7 +15,6 @@ app.use(morgan("dev"));
 
 //routes
 
-//app.get(`https://awovcw7p76.execute-api.us-east-1.amazonaws.com/${ambiente}/entity/v2.1/entities/1`);
 app.use(`/api/postEntity`, routesapi)
 export default app;
 

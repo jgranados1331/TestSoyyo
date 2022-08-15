@@ -12,19 +12,17 @@ async function filterEntityId(data){
         const data=response.data.data;
         const respuesta={
             entityId:data.entityId,
-            name:data.name
+            name:data.name,
+            identificationNumber:data.identificationNumber,
+            expirationDate:data.expirationDate,
+            contactName:data.contactName,
+            contactEmail:data.contactEmail,
+            logo:data.logo
         };
-        result.push(respuesta)
-        
-        //result.push(response);
-           /* if(error){
-               //return console.dir(error);
-            }
-            console.log(JSON.parse(result));
-        };*/
+        result.push(respuesta);
         startId++
     };
-    return result.sort(SortArray)
+    return result.sort(SortArray);
 }
    
 function SortArray(x, y){

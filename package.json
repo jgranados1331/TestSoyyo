@@ -1,5 +1,5 @@
 {
-  "name": "Test SOYYO",
+  "name": "soyyo",
   "version": "1.0.0",
   "description": "Test ingreso SOYYO",
   "main": "index.js",
@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ajv": "^8.11.0",
     "axios": "^0.27.2",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",

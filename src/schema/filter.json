@@ -14,5 +14,6 @@
           "minimum": 1,
           "maximum": 20
         }
-    }
+    },
+    "required":["startId","endId"]
 }
