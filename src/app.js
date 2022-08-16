@@ -21,7 +21,6 @@ app.use(`/api/postEntity`, routesapi)
 export default app;
 
 app.post("/api/filter", validatePost,async (req,res)=>{
-    console.log(req.body)
     const data={
         startId:req.body.startId,
         endId:req.body.endId 
