@@ -1,8 +1,10 @@
 import filterEntityId from "./controllers/postControllerEntityId";
 import express from "express";
 import morgan from "morgan";
+const {validatePost} = require('./validators/postControllerEntityId')
 //routes
 import routesapi from "./routes/routes";
+
 
 const app=express();
 
@@ -18,7 +20,7 @@ app.use(morgan("dev"));
 app.use(`/api/postEntity`, routesapi)
 export default app;
 
-app.post("/api/filter", async (req,res)=>{
+app.post("/api/filter", validatePost,async (req,res)=>{
     console.log(req.body)
     const data={
         startId:req.body.startId,
