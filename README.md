@@ -5,7 +5,7 @@ Instrucciones para la ejecucion de la api:
 3.Abrir una nueva terminar ya sea dentro de vsc o ya sea mediante gitbash
 4.en este paso realizaremos la instalacion con npm i
   4.1 npm i dotensv express
-  4.2 npm i @babel/cli @babel/core @babel/node @babel/node @babel/preset-env axios morgan nodemon -D //esto lo hacemos para asegurarnos que ningun package falte
+  4.2 npm i @babel/cli @babel/core @babel/node @babel/node @babel/preset-env axios morgan nodemon express-validator -D //esto lo hacemos para asegurarnos que ningun package falte
 5.Al tener configurado todo vamos a la consola e iniciamos la API con npm run dev y nos aseguramos que en la consola salga el mensaje: "Server on port 4000" al tener este mensaje ya sabremos que la API esta arriba.
 6.Ahora nos dirigiremos al POSTMAN y utilizaremos la siguiente configuracion: metodo 'POST' url:http://localhost:4000/api/filter
 7.Iremos a mandar un body tipo json y escogeremos un startId y un endId estos seran los numeros que conformaran el rango de la busqueda el body json sera:
