@@ -4,7 +4,6 @@ var postEntityId = require("axios");
 
 async function filterEntityId(data){
     let {startId,endId}=data;
-    console.log('==========',startId);
     let result=[]
     for (;startId <= endId;){
         const response = await postEntityId.get(`https://awovcw7p76.execute-api.us-east-1.amazonaws.com/dev/entity/v2.1/entities/${startId}`);
