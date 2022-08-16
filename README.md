@@ -40,3 +40,13 @@ Instrucciones para la ejecucion de la api:
         "logo": "logo_entidad_tuya.png"
     }
 ]
+
+
+El unit test lo hago mediante postaman con la url antes mencionada donde se podra verificar validadores y el funcionamiento de la api:
+el cuerpo que use es
+{
+"startId":2,
+"endId":5
+}
+
+me arroja un resultado un array de objetos de 4 objetos
